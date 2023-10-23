@@ -15,14 +15,14 @@
             <div class="dataContainer">
                 <form action="#" onsubmit="return false">
                     <label for="cardNumber">Card Number</label>
-                    <input type="number" name="cardNumber" id="cardNumber">
+                    <input type="number" placeholder="1234 1234 1234 1234" name="cardNumber" id="cardNumber" >
                     <label for="cardHolder">Card Holder</label>
-                    <input type="text" name="cardHolder" id="cardHolder">
+                    <input type="text" placeholder="Max Mustermann" name="cardHolder" id="cardHolder">
                     <div>
                         <label for="expDate">Expiration Date</label>
                         <label for="cvv">CVV</label>
-                        <input type="date" name="expDate" id="expDate">
-                        <input type="number" name="cvv" id="cvv">
+                        <input type="month" name="expDate" id="expDate">
+                        <input type="number" placeholder="123" name="cvv" id="cvv">
                     </div>
                     <input onclick="transfer()" type="submit" value="transfer">
                 </form>
