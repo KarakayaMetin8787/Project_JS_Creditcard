@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+body section {
+  position: relative;
+  width: 100%;
+}
+body section .dataContainer {
+  width: 600px;
+  height: 40vh;
+  border-radius: 20px;
+  margin: 25% auto 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 15px grey;
+  background-color: bisque;
+}
+body section .dataContainer form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 40px;
+  padding-top: 100px;
+  gap: 10px;
+}
+body section .dataContainer form input {
+  padding: 5px;
+}
+body section .dataContainer form input:nth-of-type(1) {
+  width: 100%;
+}
+body section .dataContainer form input:nth-of-type(2) {
+  width: 100%;
+}
+body section .dataContainer form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6%;
+}
+body section .dataContainer form div label {
+  width: 47%;
+  padding-bottom: 10px;
+}
+body section .dataContainer form div input:nth-of-type(1) {
+  width: 47%;
+}
+body section .dataContainer form div input:nth-of-type(2) {
+  width: 47%;
+}
+body section .dataContainer form input:nth-of-type(3) {
+  margin: 10px auto;
+  width: 120px;
+  height: 40px;
+  font-weight: 900;
+  border-radius: 10px;
+  border: none;
+  background-color: tomato;
+  color: white;
+}
+body section .cardContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 550px;
+  height: 300px;
+  background-image: url(./../img/back.png);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: -25vh;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  transition: transform 1s;
+}
+body section .cardContainer img {
+  width: 60px;
+  height: 60px;
+}
+body section .cardContainer img:nth-of-type(1) {
+  margin-top: 15%;
+}
+body section .cardContainer img:nth-of-type(2) {
+  margin-left: 75%;
+}
+body section .cardContainer p {
+  width: 100%;
+  padding-top: 10px;
+}
+body section .cardContainer > p:nth-of-type(1) {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+body section .cardContainer div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body section .cardContainer div p:nth-of-type(2) {
+  position: absolute;
+  left: 86%;
+}
+body section .cardContainer .back {
+  visibility: hidden;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  transition-delay: 0.25s;
+  transform: rotateY(180deg);
+}
+body section .cardContainer .back .blackBar {
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  margin-top: 50px;
+}
+body section .cardContainer .back p {
+  width: 40%;
+  background-color: gray;
+  height: 35px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 10px;
+  margin-inline: 10px;
+  margin-top: -75px;
+}
+body section .cardContainer:hover {
+  transform: rotateY(180deg) translateX(50%);
+}
+body section .cardContainer:hover .back {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

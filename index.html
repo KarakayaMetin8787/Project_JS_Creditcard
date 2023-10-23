@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <div class="dataContainer">
+                <form action="#" onsubmit="return false">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" name="cardNumber" id="cardNumber">
+                    <label for="cardHolder">Card Holder</label>
+                    <input type="text" name="cardHolder" id="cardHolder">
+                    <div>
+                        <label for="expDate">Expiration Date</label>
+                        <label for="cvv">CVV</label>
+                        <input type="date" name="expDate" id="expDate">
+                        <input type="number" name="cvv" id="cvv">
+                    </div>
+                    <input onclick="transfer()" type="submit" value="transfer">
+                </form>
+            </div>
+            <div class="cardContainer">
+                <img src="./assets/img/chip.png" alt="picOfCreditcard">
+                <img src="./assets/img/visa.png" alt="visaLogo">
+                <p>#### #### #### ####</p>
+                <div>
+                    <p>Card Holder</p>
+                    <p>Expires</p>
+                </div>
+                <div>
+                    <span>FULL NAME</span>
+                    <span>MM/YY</span>
+                </div>
+                <div class="back">
+                    <div class="blackBar"></div>
+                    <p class="cvv">###</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
